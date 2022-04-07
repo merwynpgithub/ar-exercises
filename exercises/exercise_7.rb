@@ -48,9 +48,11 @@ store7 = Store.create(name: "AB", annual_revenue: 250000, mens_apparel: false, w
 store8 = Store.create(name: "Waterloo", annual_revenue: '250000', mens_apparel: false, womens_apparel: true)
 store9 = Store.create(name: "Calgary", annual_revenue: '-', mens_apparel: false, womens_apparel: true)
 store10 = Store.create(name: "London", annual_revenue: 30000, mens_apparel: false, womens_apparel: false)
+store11 = Store.create(name: "Ottawa", annual_revenue: 200000, mens_apparel: false, womens_apparel: false)
 
 puts "Checking valid store insertions?"
 puts store7.valid?
 puts store8.valid? #true because string converted to number
 puts store9.valid?
 puts store10.valid?
+puts store11.valid?
